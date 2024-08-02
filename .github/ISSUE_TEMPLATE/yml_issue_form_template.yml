@@ -1,52 +1,64 @@
-name: バグ報告
-description: バグ報告はこちら
-labels: ["bug"]
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
-  - type: textarea
-    id: overview
+  - type: markdown
     attributes:
-      label: 概要
-      description: |
-        不具合の概要を記載してください。
-        期待される結果などもあると良いです。
-        見た目に関係する場合は、スクリーンショット等を貼り付けてください。
-    validations:
-      required: true
-  - type: textarea
-    id: environment
-    attributes:
-      label: 発生環境
-      description: |
-        発生環境を記載してください。
-        以下の特定の条件で発生するならそれも記載してください。
       value: |
-        端末:
-        OS:
-        アプリの種類:
-        バージョン:
-        API環境(本番/stg2):
-        (特定の作品で発生するなら)作品名:
-        (ログイン状態で発生するなら)citi_id:
-    validations:
-      required: true
-  - type: textarea
-    id: process
-    attributes:
-      label: 再現手順
-      description: 不具合を再現させる手順を記載してください。
-      value: |
-        1. 
-        2. 
-        3.
-  - type: textarea
-    id: supplement
-    attributes:
-      label: 備考
-      description: 備考があれば記載してください。
-      value: 特になし
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: issue_template_version
+    id: contact
     attributes:
-      label: issue_template_version
-      description: issueの検索などで利用状況を調べるためにあるので編集しないでください。
-      value: bug_report_20240802
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
