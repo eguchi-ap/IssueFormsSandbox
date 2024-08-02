@@ -1,5 +1,6 @@
 name: バグ報告
 description: バグ報告はこちら
+title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: textarea
@@ -7,9 +8,9 @@ body:
     attributes:
       label: 概要
       description: |
-        不具合の概要を記載してください。
-        期待される結果などもあると良いです。
-        見た目に関係する場合は、スクリーンショット等を貼り付けてください。
+        不具合の概要を記載してください
+        期待される結果なども
+        見た目に関係する場合は、スクリーンショット等を貼り付けてください
     validations:
       required: true
   - type: textarea
@@ -17,8 +18,8 @@ body:
     attributes:
       label: 発生環境
       description: |
-        発生環境を記載してください。
-        以下の特定の条件で発生するならそれも記載してください。
+        発生環境を記載してください
+        以下の特定の条件で発生するならそれも記載してください
       value: |
         端末:
         OS:
@@ -28,7 +29,7 @@ body:
         (特定の作品で発生するなら)作品名:
         (ログイン状態で発生するなら)citi_id:
     validations:
-      required: true
+      required: false
   - type: textarea
     id: process
     attributes:
@@ -44,9 +45,3 @@ body:
       label: 備考
       description: 備考があれば記載してください。
       value: 特になし
-  - type: input
-    id: issue_template_version
-    attributes:
-      label: issue_template_version
-      description: issueの検索などで利用状況を調べるためにあるので編集しないでください。
-      value: bug_report_20240802

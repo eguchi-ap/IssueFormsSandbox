@@ -1,5 +1,5 @@
 ---
-name: 🐞 Before Bug
+name: 変更前テンプレート（md）🐞
 about: File a bug/issue
 title: '[BUG] <title>'
 labels: Bug, Needs Triage
