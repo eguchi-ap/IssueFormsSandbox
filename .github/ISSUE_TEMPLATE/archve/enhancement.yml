@@ -1,0 +1,50 @@
+name: 技術的課題
+description: 技術的な改善・リファクタはこちら
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: どのような課題を抱えてissueを立てたのか、経緯や前提を記載してください。
+      placeholder: |
+        ex. 
+        - SwiftでiOS開発ができるようになり、Objective-Cから移行したいため
+        - 既存のお気に入り機能には問題があり〜
+    validations:
+      required: true
+  - type: textarea
+    id: merit
+    attributes:
+      label: メリット
+      description: 改善することでどのようなメリットがあるのかを記載してください。
+      placeholder: |
+        ex. 
+        - Objective-Cよりもスマートにかける、実行速度が早い、型推論がある
+        - お気に入り機能を改修することで、バグがなくなる、改修しすくなる
+    validations:
+      required: true
+  - type: textarea
+    id: do
+    attributes:
+      label: やること
+      description: |
+        このissueで取り組むことを記載してください。
+        やること、設計、詳細など。
+      placeholder: |
+        ex. 
+        - 既存のObjective-CのファイルをSwiftに置き換える
+        - GoFのデザインパターンのCommandパターンで設計する
+    validations:
+      required: true
+  - type: textarea
+    id: supplement
+    attributes:
+      label: 備考
+      description: 備考があれば記載してください。
+      value: 特になし
+  - type: input
+    id: issue_template_version
+    attributes:
+      label: issue_template_version
+      description: issueの検索などで利用状況を調べるためにあるので編集しないでください。
+      value: enhancement_request_20240404
