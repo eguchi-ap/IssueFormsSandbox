@@ -1,5 +1,6 @@
 name: 機能要望
 description: 機能追加・削除を行いたい時にはこちら
+labels: [ "feature" ]
 body:
   - type: input
     id: url_link
