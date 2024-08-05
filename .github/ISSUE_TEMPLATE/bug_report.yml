@@ -10,14 +10,14 @@ body:
       description: |
         不具合の概要を記載してください
         見た目に関係する場合は、スクリーンショット等を貼り付けてください
+      placeholder: ex. いいねの総数が一致しない
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: 期待する挙動
-      description: |
-        どのような挙動を期待するのか記載して下さい
+      placeholder: ex. いいねの総数が正しく表示されること
     validations:
       required: true
   - type: textarea
@@ -41,7 +41,6 @@ body:
     id: process
     attributes:
       label: 再現手順
-      description: 不具合を再現させる手順を記載してください
       value: |
         1. 
         2. 
@@ -50,5 +49,3 @@ body:
     id: supplement
     attributes:
       label: 備考
-      description: 備考があれば記載してください。
-      value: 特になし

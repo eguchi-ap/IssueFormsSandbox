@@ -18,4 +18,3 @@ body:
     id: supplement
     attributes:
       label: 備考
-      value: 特になし

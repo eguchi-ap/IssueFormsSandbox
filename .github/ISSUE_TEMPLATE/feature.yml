@@ -1,5 +1,5 @@
-name: 機能要望
-description: 機能追加・削除を行いたい時にはこちら
+name: 機能追加・修正
+description: 機能追加・修正を行いたい時にはこちら
 body:
   - type: input
     id: url_link
@@ -11,12 +11,9 @@ body:
     id: overview
     attributes:
       label: 概要
-      description: このissueの概要を記載をしてください
     validations:
       required: true
   - type: textarea
     id: supplement
     attributes:
       label: 備考
-      description: 備考があれば記載してください。
-      value: 特になし
