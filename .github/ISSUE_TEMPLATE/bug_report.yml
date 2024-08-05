@@ -1,15 +1,23 @@
-name: バグ報告
-description: バグ報告はこちら
-labels: ["bug"]
+name: 不具合報告
+description: 不具合報告はこちら
+title: "[Bug]: "
+labels: [ "bug" ]
 body:
   - type: textarea
     id: overview
     attributes:
-      label: 概要
+      label: 不具合の概要
       description: |
-        不具合の概要を記載してください。
-        期待される結果などもあると良いです。
-        見た目に関係する場合は、スクリーンショット等を貼り付けてください。
+        不具合の概要を記載してください
+        見た目に関係する場合は、スクリーンショット等を貼り付けてください
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する挙動
+      description: |
+        どのような挙動を期待するのか記載して下さい
     validations:
       required: true
   - type: textarea
@@ -17,23 +25,23 @@ body:
     attributes:
       label: 発生環境
       description: |
-        発生環境を記載してください。
-        以下の特定の条件で発生するならそれも記載してください。
-        (特定の作品で発生するなら)作品名:
-        (ログイン状態で発生するなら)citi_id:
+        発生環境を記載してください
+        特定の条件で発生するならそれも記載してください
       value: |
         端末:
         OS:
         アプリの種類:
         バージョン:
         API環境(本番/stg2):
+        (特定の作品で発生するなら)作品名:
+        (ログイン状態で発生するなら)citi_id:
     validations:
-      required: true
+      required: false
   - type: textarea
     id: process
     attributes:
       label: 再現手順
-      description: 不具合を再現させる手順を記載してください。
+      description: 不具合を再現させる手順を記載してください
       value: |
         1. 
         2. 
@@ -44,9 +52,3 @@ body:
       label: 備考
       description: 備考があれば記載してください。
       value: 特になし
-  - type: input
-    id: issue_template_version
-    attributes:
-      label: issue_template_version
-      description: issueの検索などで利用状況を調べるためにあるので編集しないでください。
-      value: bug_report_20240404
