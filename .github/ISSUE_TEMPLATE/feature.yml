@@ -1,0 +1,63 @@
+name: 機能要望
+description: 機能追加・削除を行いたい時にはこちら
+body:
+  - type: input
+    id: url_link
+    attributes:
+      label: URL
+      description: 仕様書,QA,RedmineのURLを記載してください。
+      placeholder: ex. https://docs.google.com/~
+  - type: dropdown
+    id: limit
+    attributes:
+      label: 期限
+      description: 期限があれば選択してください。
+      options:
+        - いつでも
+        - 1ヶ月以内
+        - 1週間以内
+        - 緊急
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: どのような機能の追加、変更を行うのか概要を記載をしてください。
+      placeholder: |
+        ex. お気に入りできるようにする
+        お気に入りボタンを投稿の下に設置し、押下することでお気に入り状態を反転させる
+        投稿情報に総お気に入り数を表示するようにする
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景と目的
+      description: なぜそれをやるのか、どのような理由でそれを行うの記載してください。
+      placeholder: |
+        ex. お気に入りできるようにすることで、気に入った投稿を保存できる
+        投稿主にお気に入りされたことを通知できる
+        ユーザー間の交流が活発になることが期待できる
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 最終的なゴール
+      description: どのようになったらこのissueは完了になるのか記載してください。
+      placeholder: |
+        ex. お気に入りボタンを押下しお気に入り状態を変更することができる
+        お気に入りボタンを押したら総いいね数が更新される
+    validations:
+      required: true
+  - type: textarea
+    id: supplement
+    attributes:
+      label: 備考
+      description: 備考があれば記載してください。
+      value: 特になし
+  - type: input
+    id: issue_template_version
+    attributes:
+      label: issue_template_version
+      description: issueの検索などで利用状況を調べるためにあるので編集しないでください。
+      value: feature_request_20240404
