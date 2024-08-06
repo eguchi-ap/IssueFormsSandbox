@@ -2,12 +2,12 @@ name: 機能追加・修正
 description: 機能追加・修正はこちら
 labels: [ "feature" ]
 body:
-  - type: input
+  - type: textarea
     id: url_link
     attributes:
       label: URL
-      description: 仕様書,QA,RedmineのURLを記載してください
-      placeholder: ex. https://docs.google.com/~
+      description: Redmine,仕様書,QAのURLを記載してください
+      placeholder: ex. https://redmine.xxx.co.jp/issues/xxxxx
   - type: textarea
     id: overview
     attributes:
