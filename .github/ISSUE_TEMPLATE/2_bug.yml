@@ -11,7 +11,6 @@ body:
         不具合の概要を記載してください
         期待する挙動も
         見た目に関係する場合は、スクリーンショット等を貼り付けてください
-      placeholder: ex. いいねの総数が一致しない
     validations:
       required: true
   - type: textarea

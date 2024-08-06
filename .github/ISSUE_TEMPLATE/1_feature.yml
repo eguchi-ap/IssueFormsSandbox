@@ -7,7 +7,7 @@ body:
     attributes:
       label: URL
       description: Redmine,仕様書,QAのURLを記載してください
-      placeholder: ex. https://redmine.xxx.co.jp/issues/xxxxx
+      placeholder: "- https://redmine.xxx.co.jp/issues/xxxxx"
   - type: textarea
     id: overview
     attributes:
