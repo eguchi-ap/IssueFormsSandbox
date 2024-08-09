@@ -1,5 +1,5 @@
-name: フォーム 不具合報告
-description: フォーム 不具合報告はこちら
+name: 不具合報告フォーム
+description: 不具合報告はこちら
 title: "[Bug]: "
 labels: [ "bug" ]
 body:

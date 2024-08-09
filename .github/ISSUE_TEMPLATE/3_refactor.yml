@@ -1,5 +1,5 @@
-name: フォーム 技術的な改善・リファクタ
-description: フォーム 技術的な改善・リファクタはこちら
+name: 技術的な改善・リファクタフォーム
+description: 技術的な改善・リファクタはこちら
 labels: [ "refactor" ]
 body:
   - type: textarea
