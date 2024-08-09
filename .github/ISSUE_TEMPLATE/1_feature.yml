@@ -1,6 +1,6 @@
 name: 機能追加・修正フォーム
 description: 機能追加・修正フォームはこちら
-labels: [ "feature" ]
+labels: [ "enhancement" ]
 body:
   - type: textarea
     id: url_link

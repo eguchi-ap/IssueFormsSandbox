@@ -1,6 +1,5 @@
 name: 不具合報告フォーム
-description: 不具合報告はこちら
-title: "[Bug]: "
+description: 不具合報告はフォームこちら
 labels: [ "bug" ]
 body:
   - type: textarea
