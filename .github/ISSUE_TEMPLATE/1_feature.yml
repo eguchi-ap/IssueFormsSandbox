@@ -1,5 +1,5 @@
-name: 機能追加・修正
-description: 機能追加・修正はこちら
+name: フォーム 機能追加・修正
+description: フォーム 機能追加・修正はこちら
 labels: [ "feature" ]
 body:
   - type: textarea
